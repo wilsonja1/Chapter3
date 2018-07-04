@@ -22,5 +22,23 @@ namespace Chapter3
             int len = Talker.BlahBlahBlah(textBox1.Text, (int)numericUpDown1.Value);
             MessageBox.Show("The message length is " + len);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Clown one = new Clown();
+            Clown two = new Clown();
+
+            one.Name = "jack";
+            one.Height = 54;
+
+            two.Name = "Angie";
+            two.Height = 44;
+
+            one.TalkAbout();
+            two.TalkAbout();
+
+            Clown.testi();
+
+        }
     }
 }
